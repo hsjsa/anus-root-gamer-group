@@ -218,7 +218,7 @@ class MirrorListener(listeners.MirrorListeners):
                 else:
                     update_all_messages()
             count = len(files)
-            msg = f'╭─📂<b>Name: </b><code>{link}</code>\n\n'
+            msg = f'╭─📂<b>Name: </b><code>{link}</code>\n│\n'
             msg += f'├─💾<b>Size: </b>{bot_utils.get_readable_file_size(size)}\n'
             msg += f'├─📚<b>Total Files: </b>{count}'
             if typ != 0:
