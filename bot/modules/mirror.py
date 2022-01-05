@@ -227,7 +227,7 @@ class MirrorListener(listeners.MirrorListeners):
                 sendMessage(msg, self.bot, self.update)
             else:
                 chat_id = str(self.message.chat.id)[4:]
-                msg += f'\n│\n├─📬<b>cc: </b>{self.tag}\n\n'
+                msg += f'\n│\n├─📬<b>cc: </b>{self.tag}\n│\n╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
                 fmsg = ''
                 for index, item in enumerate(list(files), start=1):
                     msg_id = files[item]
@@ -272,7 +272,7 @@ class MirrorListener(listeners.MirrorListeners):
                 buttons.buildbutton(f"{BUTTON_FIVE_NAME}", f"{BUTTON_FIVE_URL}")
             if BUTTON_SIX_NAME is not None and BUTTON_SIX_URL is not None:
                 buttons.buildbutton(f"{BUTTON_SIX_NAME}", f"{BUTTON_SIX_URL}")
-        msg += f'\n\n<b>cc: </b>{self.tag}'
+        msg += f'\n│\n├─📬<b>cc: </b>{self.tag}\n│\n╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
         if self.isQbit and QB_SEED:
            return sendMarkup(msg, self.bot, self.update, InlineKeyboardMarkup(buttons.build_menu(2)))
         else:
