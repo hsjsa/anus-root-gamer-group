@@ -1,7 +1,7 @@
                                      ⚠️⚠️⚠️⚠️⚠️
 
 
-Thia repository is by (Anas)[https://github.com/anasty17]. This repo is only emoji added.No new feature or anything changed in code . 🤕
+Thia repository is by [*Anas*](https://github.com/anasty17). This repo is only emoji added.No new feature or anything changed in code . 🤕
 
 
 
