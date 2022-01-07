@@ -60,7 +60,7 @@ def cloneNode(update, context):
                 msg2 = f'Failed, Clone limit is {CLONE_LIMIT}GB.\nYour File/Folder size is {get_readable_file_size(size)}.'
                 return sendMessage(msg2, context.bot, update)
         if files <= 10:
-            msg = sendMessage(f"Cloning♻️: <code>{link}</code>", context.bot, update)
+            msg = sendMessage(f"Cloning: <code>{link}</code>", context.bot, update)
             result, button = gd.clone(link)
             deleteMessage(context.bot, msg)
         else:
@@ -83,7 +83,7 @@ def cloneNode(update, context):
                     update_all_messages()
             except IndexError:
                 pass
-        cc = f'\n│\n├─📬<b>cc: </b>{uname}\n│\n╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』'
+        cc = f'\n│\n╰─📬<b>cc: </b>{tag}n│\n╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
         if button in ["cancelled", ""]:
             sendMessage(f"{tag} {result}", context.bot, update)
         else:
