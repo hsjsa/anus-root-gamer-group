@@ -57,7 +57,7 @@ def stats(update, context):
             f'├─💽<b>Memory Total:</b> {mem_t}\n'\
             f'├─💾<b>Memory Free:</b> {mem_a}\n'\
             f'├─💻<b>Memory Used:</b> {mem_u}\n│\n'\
-            f'╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
+            f'╰───『💥 <a href="https://t.me/+FybEXzvlVJk0ZDE1"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
     sendMessage(stats, context.bot, update)
 
 
