@@ -7,6 +7,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt install wget curl -y
 RUN wget ${{secrets.CONFIG_FILE_URL}}
+COPY config.env .
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
